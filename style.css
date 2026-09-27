@@ -356,9 +356,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
   .hero { padding: 4rem 1.25rem 3rem; }
-  .hero-top { flex-direction: column-reverse; align-items: center; text-align: center; gap: 2rem; }
+  .hero-top { flex-direction: column-reverse; align-items: center; text-align: center; gap: 1.25rem; }
   .hero-inner { max-width: 100%; }
-  .hero-photo { width: 130px; height: 130px; }
+  .hero-photo { width: 96px; height: 96px; outline-offset: 4px; }
   .hero-cta { justify-content: center; }
   .hero-stats { grid-template-columns: 1fr; gap: 1.5rem; }
   .section { padding: 3.5rem 1.25rem; }
