@@ -405,3 +405,19 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
   color: var(--text-dim);
 }
 .gallery-item strong { color: var(--text); }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+@media (max-width: 780px) {
+  .gallery { grid-template-columns: 1fr; }
+}
