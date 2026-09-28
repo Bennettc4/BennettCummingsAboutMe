@@ -384,40 +384,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-.gallery-item {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-.gallery-item img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-}
-.gallery-item figcaption {
-  padding: 1rem 1.25rem;
-  font-size: 0.88rem;
-  color: var(--text-dim);
-}
-.gallery-item strong { color: var(--text); }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .gallery img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: var(--radius);
   display: block;
 }
 @media (max-width: 780px) {
-  .gallery { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
 }
